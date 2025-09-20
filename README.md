@@ -35,6 +35,8 @@ We created four tables:
 * **FOREIGN KEY**: links  Transaction to customers & product
 * **NOT NULL**: mandatory fields like `customer_id`, `product_id`
 
+![Inserting Data](relationship.PNG)
+
 ---
 
 ## 🔍 Queries
@@ -52,16 +54,34 @@ CREATE TABLE products (
     price_per_kg NUMBER
 );
 ```
+creation of all tables 
+![Inserting Data](creating%20tables.PNG)
 
 ### ✔ Sample Data Insertion
 
 Data was added for testing using **INSERT INTO**.
 
-### ✔ Joins
+![Inserting Data](inserting%20data.PNG)
+
+**Product table**
+![Inserting Data](product%20table.PNG)
+
+**Customer table**
+![Inserting Data](customer%20table.PNG)
+
+**Transaction table**
+![Inserting Data](transaction%20table.PNG)
+
+### ✔ task we did
 
 We tested:
 
-* **INNER JOIN** → shows employees working on projects.
+* **RANK()** → Assigns ranks within each partition (region/quarter).
+  
+This SQL query analyzes sales performance to identify the top 5 best-selling products in each region for each quarter
+
+![Inserting Data](Top%205%20Products%20per%20Region.PNG)
+  
 * **LEFT JOIN** → shows all employees, even without projects.
 * **RIGHT JOIN** → shows all projects, even without employees.
 * **FULL JOIN** → shows all employees & projects with or without assignments.
