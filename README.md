@@ -72,7 +72,7 @@ Data was added for testing using **INSERT INTO**.
 **Transaction table**
 ![Inserting Data](transaction%20table.PNG)
 
-### ✔ task we did
+### ✔ task i did
 
 We tested:
 
@@ -82,7 +82,16 @@ This SQL query analyzes sales performance to identify the top 5 best-selling pro
 
 ![Inserting Data](Top%205%20Products%20per%20Region.PNG)
   
-* **LEFT JOIN** → shows all employees, even without projects.
+* **SUM() OVER()** → Running Monthly Sales Totals.
+
+This SQL query analyzes monthly sales performance with a running total.
+
+Groups transactions by month (YYYY-MM format)
+
+Calculates total sales for each individual month
+
+![Inserting Data](monthly%20sales%20totals.PNG)
+  
 * **RIGHT JOIN** → shows all projects, even without employees.
 * **FULL JOIN** → shows all employees & projects with or without assignments.
 
